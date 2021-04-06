@@ -1,7 +1,7 @@
 # docker-julia
 Docker for Julia server with vscode.
 
-![Image of vscode runnung julia](img/codejulia)
+![Image of vscode running julia](img/codejulia.png)
 
 > Do you want to run Julia in a similar fashion to [rocker/rstudio-server?](https://hub.docker.com/r/rocker/rstudio) Do you need a docker for each julia-version/project? If so, this is for you. 
 
