@@ -38,7 +38,7 @@ docker build --build-arg JULIA_VERSION=1.5.3 -t image-julia .
 By default, `docker-julia` runs on port `3838`. 
 
 ```{bash}
-docker run -d -p 3838:3838 --env JULIA_NUM_THREADS=12 --restart=unless-stopped image-julia
+docker run -d -p 3838:3838 --restart=unless-stopped image-julia
 ```
 
 You can access the container by going to: [http://0.0.0.0:3838](http://0.0.0.0:3838)
@@ -47,4 +47,9 @@ Additional options such as setting the number of threads:
 
 ```{bash}
 docker run -d -p 3838:3838 --env JULIA_NUM_THREADS=12 --restart=unless-stopped image-julia
+```
+
+You can also link to a specific folder:
+```{bash}
+ docker run -d -p 3838:3838 -v /path/to/folder:/root --env JULIA_NUM_THREADS=12 --restart=unless-stopped image-julia
 ```
